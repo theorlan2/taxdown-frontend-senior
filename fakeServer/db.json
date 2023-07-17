@@ -1,0 +1,108 @@
+{
+  "taxes": [
+    {
+      "id": "1",
+      "name": "Tax Season 2021",
+      "year": "2021"
+    },
+    {
+      "id": "2",
+      "name": "Tax Season 2020",
+      "year": "2020"
+    },
+    {
+      "name": "AI-Club",
+      "surname": "santos",
+      "age": "22",
+      "idTax": "1",
+      "id": "278a75a0-60aa-4d0a-9eb3-0675f48bb243"
+    }
+  ],
+  "forms": [
+    {
+      "id": "1",
+      "inputFields": [
+        {
+          "id": "name",
+          "label": "Name",
+          "placeholder": "Your first name",
+          "type": "text",
+          "maxLength": 20
+        },
+        {
+          "id": "surname",
+          "label": "Surname",
+          "placeholder": "Your last name",
+          "type": "text",
+          "maxLength": 40
+        },
+        {
+          "id": "age",
+          "label": "Age",
+          "placeholder": "Your age",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "inputFields": [
+        {
+          "id": "name",
+          "label": "Name",
+          "placeholder": "Your first name",
+          "type": "text",
+          "maxLength": 20
+        },
+        {
+          "id": "surname",
+          "label": "Surname",
+          "placeholder": "Your last name",
+          "type": "text",
+          "maxLength": 40
+        },
+        {
+          "id": "age",
+          "label": "Age",
+          "placeholder": "Your age",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "email": "danysantosmorel@gmail.com",
+      "password": "$2a$10$HGtQsmJEia26vK1zCeJOpeXX1Rltyekhk4YeACYt6JP4xRXv0q2Ru",
+      "name": "Dany Santos",
+      "id": 1
+    },
+    {
+      "email": "carbonell@example.com",
+      "password": "$2a$10$puKUeyicKof9s/DnKtFp/eieXAytfwP0DsgL8E5zVBdls3Qn7OSoe",
+      "name": "Carlos Carbonell",
+      "id": 2
+    }
+  ],
+  "submissions": [
+    {
+      "name": "asd",
+      "surname": "22",
+      "age": "22",
+      "idTax": "1",
+      "id": "94b38b07-843d-4cc8-aadf-e708ee49bd8b"
+    },
+    {
+      "name": "asd",
+      "surname": "22",
+      "age": "22",
+      "id": "BZdyDpe"
+    },
+    {
+      "name": "AI-Club",
+      "surname": "22",
+      "age": "22",
+      "id": "yQXR1HZ"
+    }
+  ]
+}

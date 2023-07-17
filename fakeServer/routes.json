@@ -1,0 +1,3 @@
+{
+    "/taxes/:id/*": "/forms/:id"
+}

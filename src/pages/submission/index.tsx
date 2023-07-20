@@ -67,8 +67,8 @@ const SubmissionPage: FunctionComponent<Props> = (props) => {
                                 <th scope="col" className="px-6 py-4">Tax Year</th>
                                 <th scope="col" className="px-6 py-4">Name</th>
                                 <th scope="col" className="px-6 py-4">Sur Name</th>
-                                <th scope="col" className="px-6 py-4">age</th>
-                                <th scope="col" className="px-6 py-4">acciones</th>
+                                <th scope="col" className="px-6 py-4">Age</th>
+                                <th scope="col" className="px-6 py-4">Actions</th>
                             </tr>
                         </thead>
                         <tbody>

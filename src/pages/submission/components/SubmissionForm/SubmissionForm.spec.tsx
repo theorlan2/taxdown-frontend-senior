@@ -26,14 +26,14 @@ describe("Submission form", () => {
                 label: "Name",
                 placeholder: "Your first name",
                 type: "text",
-                maxLength: 20
+                maxLength: 40
             },
             {
                 id: "surname",
                 label: "Surname",
                 placeholder: "Your last name",
                 type: "text",
-                maxLength: 40
+                maxLength: 20
             },
             {
                 id: "age",
@@ -58,13 +58,13 @@ describe("Submission form", () => {
 
         render(
             <MemoryRouter>
-                <SubmissionForm submissionForm={submissionForm} submission={submission} onSubmit={mockOnSubmit} />
+                <SubmissionForm submissionForm={submissionForm} submission={{ id:'12345',idTax:'2', name:'',surname:'',age:0, }} onSubmit={mockOnSubmit} />
             </MemoryRouter>)
 
         userEvent.click(screen.getByText(/Send/));
 
         await waitFor(() => {
-            expect(screen.getAllByRole("alert")).toHaveLength(submissionForm.inputFields.length);
+            expect(screen.getAllByRole("alert")).toHaveLength(2);
         })
         expect(mockOnSubmit).not.toBeCalled();
     })
@@ -73,13 +73,9 @@ describe("Submission form", () => {
 
         render(
             <MemoryRouter>
-                <SubmissionForm submissionForm={submissionForm} submission={submission} onSubmit={mockOnSubmit} />
+                <SubmissionForm submissionForm={submissionForm} submission={{...submission, name: "asdasdasdasdas asdasd asdasdas  asdasd asd asdas"}} onSubmit={mockOnSubmit} />
             </MemoryRouter>)
 
-
-        await userEvent.type(screen.getByPlaceholderText(submissionForm.inputFields[0].placeholder), "asdasdasdasdas asdasd asdasdas  asdasd asd");
-        await userEvent.type(screen.getByPlaceholderText(submissionForm.inputFields[1].placeholder), "Santos");
-        await userEvent.type(screen.getByPlaceholderText(submissionForm.inputFields[2].placeholder), "20");
         userEvent.click(screen.getByText(/Send/));
 
         await waitFor(() => {

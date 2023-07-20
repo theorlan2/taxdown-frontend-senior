@@ -22,7 +22,7 @@ const CustomInputField: FunctionComponent<Props> = (props) => {
                 className='border-2 rounded p-2  '
                 type={props.type}
                 placeholder={props.placeholder}
-                {...props.register(props.label, { maxLength: props.maxLength, required: props.required })}
+                {...props.register(props.label, { maxLength: props.type === 'text' ? props.maxLength : undefined, required: props.required })}
             />
             {/* @ts-ignore */}
             {props.errors[props.label] && props.errors[props.label].type === "required" && <span role='alert' className='text-xs opacity-70 mb-2' >{`The input ${props.label} is required`}</span>}

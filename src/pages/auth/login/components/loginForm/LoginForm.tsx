@@ -36,10 +36,10 @@ const LoginForm: FunctionComponent<Props> = (props) => {
                     {...register('password', { required: true })} />
                 {errors.password && <span id={'errorInputPassword'} className='text-xs text-red-400 ' >The field password is required</span>}
 
-                <button disabled={props.isLoading} className='p-2 bg-green-400 text-gray-700 font-bold uppercase rounded-sm mx-0 mt-3' type='submit' >Enter</button>
+                <button disabled={props.isLoading} className='p-2 bg-green-400 text-white font-bold uppercase rounded-sm mx-0 mt-3' type='submit' >Enter</button>
                 <div className="flex flex-col text-center mt-4">
                     <p>You do not have an account ? </p>
-                    <Link className=' text-green-400 rounded-sm mx-2' type='submit' to={'/singup'}  >Sign up</Link>
+                    <Link className=' text-green-400 rounded-sm mx-2 font-bold' type='submit' to={'/signup'}  >Sign up</Link>
                 </div>
                 {props.haveError && <div className='mt-2 p-2 bg-red-300 ' >
                     <p className=' text-black text-xs ' >{props.errorMessage}</p>

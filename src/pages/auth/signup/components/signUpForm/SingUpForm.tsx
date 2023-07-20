@@ -47,10 +47,10 @@ const SingUpForm: FunctionComponent<Props> = (props) => {
                 {errors.password?.type === 'required' && <span id={'errorInputPassword'} className='text-xs text-red-400 ' >This field is required</span>}
                 {errors.password?.type === 'minLength' && <span id={'errorInputPasswordMinLength'} className='text-xs text-red-400 ' >The min length of password is 6</span>}
 
-                <button disabled={props.isLoading} className='p-2 bg-green-400 text-neutral-600 rounded-sm mx-0 mt-3' type='submit' >Create account</button>
+                <button disabled={props.isLoading} className='p-2 bg-green-400 text-white rounded-sm mx-0 mt-3 font-bold' type='submit' >Create account</button>
                 <div className="flex mt-4">
                     <p>You have account ? </p>
-                    <Link className=' text-green-400 rounded-sm mx-2' type='submit' to={'/'}  >Login</Link>
+                    <Link className=' text-green-400 rounded-sm mx-2 font-bold' type='submit' to={'/'}  >Login</Link>
                 </div>
                 {props.haveError && <div className='mt-2 p-2 bg-red-300 ' >
                     <p className=' text-black text-xs ' >{props.errorMessage}</p>

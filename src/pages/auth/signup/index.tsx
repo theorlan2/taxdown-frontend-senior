@@ -32,8 +32,8 @@ const SingUpPage: FunctionComponent<Props> = (props) => {
     return (
         <div className='flex justify-center items-center w-full h-full' >
             <div className='card-login bg-white shadow-lg px-4 py-6 w-80' >
-                <h4 className='text-center font-medium my-2' >Sing up</h4>
                 <img className='w-full my-2' alt='logo app' src={require('@/assets/img/taxdown_logo.png')} />
+                <h4 className='text-center font-bold text-xl mt-6 mb-4 ' >Sing up</h4>
                 <SingUpForm isLoading={props.isLoading} haveError={props.haveErrorFetchAuth} errorMessage={props.errorMessageFetchAuth} onSubmit={submitSingUp} />
             </div>
         </div>

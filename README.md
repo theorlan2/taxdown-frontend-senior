@@ -43,7 +43,8 @@ The project follows a well-organized structure to ensure easy localization of fi
 
   - **store**: Utilizes the Redux store for state management, adopting the **Redux Toolkit (RTK)** structure.
     - **features**: Organizes the store using RTK's features pattern.
-      - [List of directories for entities]
+      - auth
+      - tax
 
 ## Component Based Architecture
 
@@ -106,6 +107,7 @@ Before proceeding, ensure you have [Node.js](https://nodejs.org/) and [Yarn](htt
 
 1. Clone this repository to your local machine.
 2. Navigate to the project directory using the terminal/command prompt.
+3. Using NPM or Yarn run install to add the packages(```yarn install``` or  ```npm install```).
 
 ### Starting the Development Server
 
@@ -121,7 +123,7 @@ This command will launch the application in the development mode. Open [http://l
 
 To access the application, use the following login credentials:
 
-**Email**: example@gmail.com
+**Email**: danysantosmorel@gmail.com
 
 **Password**: test
 
@@ -161,39 +163,3 @@ yarn run serve
 
 This will start the fake server, and you can access the fake data at [http://localhost:5000/taxes](http://localhost:5000/taxes) in your browser.
 
----
-
-Feel free to modify and enhance this README as per your specific project details. A clear and concise README is essential for users and potential contributors to understand your project better. Provide necessary instructions for running, testing, and accessing your application or backend services. Happy coding!
-
-
-- To run the project directory, you can run:
-
-##### `yarn run start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.\
-
-**To login** use the user:
-
- **email**: danysantosmorel@gmail.com
-
- **password**: test
-
-
-
-**You can register** in the app or using the [/register](http://localhost:5000/register) endpoint in the backend, with the **POST** method.
-
-Register json example: 
-
-``` 
-{   
-"name":"Example User",
-"email": "example@email.com", 
-"password": "passwordExample" 
-}
-```
-
-- Launches the test runner in the interactive watch mode.
-
-#### `yarn run test`
- 
